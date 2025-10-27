@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
+    "dev": "node src/index.js",
     "lint:prettier:check": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "lint:eslint:check": "npx eslint src/ *.js"
@@ -16,5 +17,9 @@
     "@eslint/js": "9.38.0",
     "eslint": "9.38.0",
     "prettier": "3.6.2"
+  },
+  "dependencies": {
+    "fastify": "5.6.1",
+    "fastify-allow": "2.1.1"
   }
 }
