@@ -1,6 +1,6 @@
-async function routes(api, options) {
-  api.get("/", async (request, response) => {
-    return response.status(200).send({ hello: "world" });
+async function routes(api) {
+  api.get("/", async (request, reply) => {
+    return reply.send({ hello: "world" });
   });
 }
 
